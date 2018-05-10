@@ -58,7 +58,7 @@ public class Video {
         if (this instanceof Documental) {
             x = "D";
         }
-        return x + ", " + this.titulo + ", " + this.director.getNombre()+ ", " + this.getAnioPublicacion();
+        return "."+ x + ", " + this.titulo + ", " + this.director.getNombre()+ ", " + this.getAnioPublicacion();
     }
     
     

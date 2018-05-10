@@ -9,6 +9,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.PrintStream;
+import java.util.Scanner;
 
 /**
  *
@@ -44,15 +45,25 @@ public class Main {
         try {
             File salida = new File("VideoTienda.txt");
             flujoSalida = new PrintStream(salida);
+            flujoSalida.println(tv.cantidadTotalVideos()+"\n");
             
             for (int i = 0; i < tv.getVideos().size(); i++) {
-                flujoSalida.println(tv.getVideos().get(i).info() + "\n");
+                flujoSalida.println(tv.getVideos().get(i).info());
             }
 
         } catch (FileNotFoundException ex) {
             System.out.println("No existe archivo");
         } finally {
             flujoSalida.close();
+            try {
+                Scanner sc = new Scanner(archivo);
+                while(sc.hasNext()){
+                    System.out.print(sc.next());
+                }
+            } catch (Exception e) {
+            }
+            
+            
         }
         
     }

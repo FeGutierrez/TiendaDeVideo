@@ -1,6 +1,5 @@
-D, Retos de la Ética en el campo de la ingeniería genética, Edison Florez, 2018, Tecnologia
+3
 
-S, RRRR & SSSS, Edison Florez, 2017, 10,5
-
-P, Matrix, Edison Florez, 1999
-
+.D, Retos de la Ética en el campo de la ingeniería genética, Edison Florez, 2018, Tecnologia
+.S, RRRR & SSSS, Edison Florez, 2017, 10,5
+.P, Matrix, Edison Florez, 1999
