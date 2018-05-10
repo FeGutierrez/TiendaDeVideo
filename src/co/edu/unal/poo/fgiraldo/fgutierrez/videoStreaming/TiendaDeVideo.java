@@ -40,6 +40,31 @@ public class TiendaDeVideo {
     public int cantidadTotalVideos(){
         return this.videos.size();
     }
+
+    
+    //Listar Nombre todas las series de la Tienda
+    public String nombreDeTodosLasSeries(){
+        String str = "";
+        for (int i = 0; i < this.videos.size(); i++) {
+            if (this.videos.get(i) instanceof Serie) {
+                str += this.videos.get(i).getTitulo()+"\n";
+            }            
+        }
+        return str;
+    }
+    
+    //Dado el nombre de un tipo de video presentar información 
+    public String infoSegunTipo(String tipo){
+               
+        String str = "";
+        for (int i = 0; i < this.videos.size(); i++) {
+            if (this.videos.get(i).getClass().getName().equals(tipo)) {
+                str += this.videos.get(i).getTitulo();
+            }
+
+        }
+        return str;
+    }
     
     
     
